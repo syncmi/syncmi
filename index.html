@@ -102,7 +102,7 @@
                 name="connect"
                 id="connect"
               />
-              <button type="submit" class="btn btn-primary">Connect</button>
+              <button type="submit" id="cnt-btn" class="btn btn-primary">Connect</button>
             </form>
           </div>
 
@@ -694,7 +694,7 @@
       window.addEventListener("load", function () {
         const form = document.getElementById("connect-form");
         form.addEventListener("submit", function (e) {
-          document.getElementById("connect").value = "Sending...";
+          document.getElementById("cnt-btn").textContent = "Sending...";
           e.preventDefault();
           const data = new FormData(form);
           const action = e.target.action;
