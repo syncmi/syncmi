@@ -1532,9 +1532,22 @@ section {
 # Get a Quote Section
 --------------------------------------------------------------*/
 .get-a-quote .quote-bg {
-  min-height: 500px;
+  min-height: 200px;
+  height: 300px;
   background-size: cover;
   background-position: center;
+}
+
+.get-a-quote h3{
+  color: var(--color-heading);
+}
+
+.get-a-quote p{
+  color: var(--color-paragraph);
+}
+
+.get-a-quote ul{
+  color: var(--color-paragraph);
 }
 
 .get-a-quote .php-email-form {
