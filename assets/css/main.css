@@ -1057,6 +1057,15 @@ section {
   font-size: 18px;
 }
 
+.pricing h6 span {
+  color: rgba(108, 117, 125, 0.8);
+  font-size: 24px;
+}
+.pricing h6{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 .pricing ul {
   padding: 2px 0;
   list-style: none;
