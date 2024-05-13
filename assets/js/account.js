@@ -107,6 +107,9 @@ export async function promoSubmit() {
         document.getElementById("promo").value = existingPromo;
         document.getElementById("cnt-btn").innerText = "Applied";
         document.getElementById("cnt-btn").classList.add("disabled");
+        document.getElementById("minion").innerHTML = `<sup>&#8377;</sup>3999`;
+        document.getElementById("basic").innerHTML = `<sup>&#8377;</sup>5999`;
+        document.getElementById("premium").innerHTML = `<sup>&#8377;</sup>8999`;
       } catch (error) {
         console.error("Error incrementing promo code count:", error);
       }
