@@ -33,7 +33,7 @@
       href="assets/vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
     />
- 
+
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
@@ -44,7 +44,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
-    
   </head>
 
   <body>
@@ -70,7 +69,9 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="get-a-quote" href="login.html">Log In</a></li>
+            <li id="indexAcc">
+              <a class="get-a-quote" href="javascript:signUp()">Log In</a>
+            </li>
           </ul>
         </nav>
         <!-- .navbar -->
@@ -105,7 +106,9 @@
                 name="connect"
                 id="connect"
               />
-              <button type="submit" id="cnt-btn" class="btn btn-primary">Connect</button>
+              <button type="submit" id="cnt-btn" class="btn btn-primary">
+                Connect
+              </button>
             </form>
           </div>
 
@@ -229,12 +232,12 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="pricing-item">
                 <h3>Minion</h3>
-                <h6><span><strike>&#8377;6999</span></strike></h6>
+                <h6>
+                  <span><strike>&#8377;6999</strike></span>
+                </h6>
                 <h4><sup>&#8377;</sup>4999</h4>
                 <ul>
-                  <li>
-                    <i class="bi bi-check"></i> Domain(domain.web.app)
-                  </li>
+                  <li><i class="bi bi-check"></i> Domain(domain.web.app)</li>
                   <li><i class="bi bi-check"></i> SSL Inclusive</li>
                   <li><i class="bi bi-check"></i> Upto 4 Pages</li>
                   <li>
@@ -274,7 +277,9 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
               <div class="pricing-item featured">
                 <h3>Basic</h3>
-                <h6><span><strike>&#8377;8999</span></strike></h6>
+                <h6>
+                  <span><strike>&#8377;8999</strike></span>
+                </h6>
                 <h4><sup>&#8377;</sup>6999<span></span></h4>
                 <ul>
                   <li><i class="bi bi-check"></i> Custom Domain(domain.com)</li>
@@ -283,8 +288,12 @@
                   </li>
                   <li><i class="bi bi-check"></i> SSL Inclusive</li>
                   <li><i class="bi bi-check"></i> Upto 5 pages</li>
-                  <li><i class="bi bi-check"></i> Contact Form - Google Sheets</li>
-                  <li><i class="bi bi-check"></i> Contact Form - Mail Integration</li>                  
+                  <li>
+                    <i class="bi bi-check"></i> Contact Form - Google Sheets
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> Contact Form - Mail Integration
+                  </li>
                   <li>
                     <i class="bi bi-check"></i> Additional Page @ &#8377; 599
                   </li>
@@ -310,7 +319,9 @@
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
               <div class="pricing-item">
                 <h3>Premium</h3>
-                <h6><span><strike>&#8377;11999</span></strike></h6>
+                <h6>
+                  <span><strike>&#8377;11999</strike></span>
+                </h6>
                 <h4><sup>&#8377;</sup>9999<span></span></h4>
                 <ul>
                   <li><i class="bi bi-check"></i> Custom Domain(domain.com)</li>
@@ -319,10 +330,14 @@
                   </li>
                   <li><i class="bi bi-check"></i> SSL Inclusive</li>
                   <li><i class="bi bi-check"></i> Upto 6 pages</li>
-                  <li><i class="bi bi-check"></i> Contact Form - Google Sheets</li>
-                  <li><i class="bi bi-check"></i> Contact Form - Mail Integration</li>
+                  <li>
+                    <i class="bi bi-check"></i> Contact Form - Google Sheets
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> Contact Form - Mail Integration
+                  </li>
                   <li><i class="bi bi-check"></i> Content Writing</li>
-                  <li><i class="bi bi-check"></i> Images for Website</li>   
+                  <li><i class="bi bi-check"></i> Images for Website</li>
                   <li>
                     <i class="bi bi-check"></i> Additional Page @ &#8377; 599
                   </li>
@@ -631,7 +646,9 @@
                 class="whatsapp"
                 ><i class="bi bi-whatsapp"></i
               ></a>
-              <a href="https://www.instagram.com/syncmi.web.app?igsh=cnJreG0xd2hzMGhi" class="instagram"
+              <a
+                href="https://www.instagram.com/syncmi.web.app?igsh=cnJreG0xd2hzMGhi"
+                class="instagram"
                 ><i class="bi bi-instagram"></i
               ></a>
               <a
@@ -726,7 +743,6 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-    
       window.addEventListener("load", function () {
         const form = document.getElementById("connect-form");
         form.addEventListener("submit", function (e) {
@@ -746,9 +762,12 @@
       window.addEventListener("load", function () {
         const form = document.getElementById("contact-form");
         form.addEventListener("submit", function (e) {
-          document.getElementById("contact-form-success").textContent = "Sending...";
-          document.getElementById("contact-form-success").style.display = "block";
-          document.getElementById("contact-form-success").style.borderRadius = "10px";
+          document.getElementById("contact-form-success").textContent =
+            "Sending...";
+          document.getElementById("contact-form-success").style.display =
+            "block";
+          document.getElementById("contact-form-success").style.borderRadius =
+            "10px";
           e.preventDefault();
           const data = new FormData(form);
           const action = e.target.action;
@@ -761,6 +780,10 @@
           });
         });
       });
+    </script>
+    <script type="module">
+      import { signUp } from "./assets/js/index.js";
+      window.signUp = signUp;
     </script>
   </body>
 </html>
