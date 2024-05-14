@@ -5,12 +5,28 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Syncmi Web Solutions | Services</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://syncmi.web.app/services" />
+    <meta property="og:title" content="Syncmi Web Solutions | Services" />
+    <meta
+      property="og:description"
+      content="Discover the comprehensive range of services offered by Syncmi Web Solutions. From SEO-optimized web design to scalable solutions, we provide affordable services tailored to enhance your online presence and drive success."
+    />
+    <meta
+      property="og:image"
+      content="https://syncmi.web.app/assets/img/logo/syncmi.png"
+    />
+    <meta
+      name="description"
+      content="Discover the comprehensive range of services offered by Syncmi Web Solutions. From SEO-optimized web design to scalable solutions, we provide affordable services tailored to enhance your online presence and drive success."
+    />
+    <meta name="keywords" content="Syncmi, website, web solutions, syncmi web solutions, affordable website, seo optimised website, stylish website, web development,website for business" />
+    <meta name="author" content="Mohammed Thalha" />
+    <link rel="canonical" href="https://syncmi.web.app/services" />
 
     <!-- Favicons -->
-    <link href="assets/img/logo/SWS FAVICON.png" rel="icon" />
-    <link href="assets/img/logo/SWS FAVICON.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo/logoSyncmi.png" rel="icon" />
+    <link href="assets/img/logo/logoSyncmi.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,7 +68,7 @@
       >
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo/SWS LOGO.png" alt="SYNCMI" />
+          <img src="assets/img/logo/sws.png" alt="Syncmi Web Solutions" />
           <!-- <h1>Web Solutions</h1> -->
         </a>
 
@@ -67,7 +83,9 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="get-a-quote" href="get-a-quote.html">Log In</a></li>
+            <li id="indexAcc">
+              <a class="get-a-quote" href="javascript:signUp()">Log In</a>
+            </li>
           </ul>
         </nav>
         <!-- .navbar -->
@@ -93,7 +111,7 @@
                 <div class="card-img">
                   <img
                     src="assets/img/development.jpeg"
-                    alt=""
+                    alt="Web Development"
                     class="img-fluid"
                   />
                 </div>
@@ -117,7 +135,7 @@
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/design.jpeg" alt="" class="img-fluid" />
+                  <img src="assets/img/design.jpeg" alt="Web Design" class="img-fluid" />
                 </div>
                 <h3>
                   <a href="service-details.html" class="stretched-link"
@@ -139,7 +157,7 @@
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/logo.jpeg" alt="" class="img-fluid" />
+                  <img src="assets/img/logo.jpeg" alt="Logo Design" class="img-fluid" />
                 </div>
                 <h3>
                   <a href="service-details.html" class="stretched-link"
@@ -161,7 +179,7 @@
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/hosting.jpeg" alt="" class="img-fluid" />
+                  <img src="assets/img/hosting.jpeg" alt="Web Hosting" class="img-fluid" />
                 </div>
                 <h3>
                   <a href="service-details.html" class="stretched-link"
@@ -186,7 +204,7 @@
                 <div class="card-img">
                   <img
                     src="assets/img/consultancy.jpeg"
-                    alt=""
+                    alt="Consultancy"
                     class="img-fluid"
                   />
                 </div>
@@ -211,7 +229,7 @@
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/content.jpeg" alt="" class="img-fluid" />
+                  <img src="assets/img/content.jpeg" alt="Content Writing" class="img-fluid" />
                 </div>
                 <h3>
                   <a href="service-details.html" class="stretched-link"
@@ -346,5 +364,9 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script type="module">
+      import { signUp } from "./assets/js/index.js";
+      window.signUp = signUp;
+    </script>
   </body>
 </html>

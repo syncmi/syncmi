@@ -4,13 +4,28 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Syncmi Web Solutions | About</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://syncmi.web.app/about" />
+    <meta property="og:title" content="Syncmi Web Solutions | About" />
+    <meta
+      property="og:description"
+      content="Learn more about Syncmi Web Solutions, your trusted partner in delivering SEO-optimized, affordable, and scalable website solutions. Discover our expertise, commitment to quality, and dedication to helping businesses grow online."
+    />
+    <meta
+      property="og:image"
+      content="https://syncmi.web.app/assets/img/logo/syncmi.png"
+    />
+    <meta
+      name="description"
+      content="Learn more about Syncmi Web Solutions, your trusted partner in delivering SEO-optimized, affordable, and scalable website solutions. Discover our expertise, commitment to quality, and dedication to helping businesses grow online."
+    />
+    <meta name="keywords" content="Syncmi, website, web solutions, syncmi web solutions, affordable website, seo optimised website, stylish website, web development,website for business" />
+    <meta name="author" content="Mohammed Thalha" />
+    <link rel="canonical" href="https://syncmi.web.app/about" />
 
     <!-- Favicons -->
-    <link href="assets/img/logo/SWS FAVICON.png" rel="icon" />
-    <link href="assets/img/logo/SWS FAVICON.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo/logoSyncmi.png" rel="icon" />
+    <link href="assets/img/logo/logoSyncmi.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,7 +67,7 @@
       >
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo/SWS LOGO.png" alt="SYNCMI" />
+          <img src="assets/img/logo/sws.png" alt="Syncmi Web Solutions" />
           <!-- <h1>Web Solutions</h1> -->
         </a>
 
@@ -67,7 +82,9 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="get-a-quote" href="get-a-quote.html">Log In</a></li>
+            <li id="indexAcc">
+              <a class="get-a-quote" href="javascript:signUp()">Log In</a>
+            </li>          
           </ul>
         </nav>
         <!-- .navbar -->
@@ -111,7 +128,7 @@
               <img
                 src="assets/img/syncmi code works.png"
                 class="img-fluid"
-                alt=""
+                alt="Syncmi Code Image"
               />
               <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
             </div>
@@ -126,7 +143,7 @@
             <div
               class="col-lg-6 position-relative align-self-start order-lg-last order-first"
             >
-              <img src="assets/img/services.jpg" class="img-fluid" alt="" />
+              <img src="assets/img/services.jpg" class="img-fluid" alt="Web Service" />
             </div>
             <div class="col-lg-6 content order-last order-lg-first">
               <h3>Features</h3>
@@ -446,6 +463,10 @@
           });
         });
       });
+    </script>
+    <script type="module">
+      import { signUp } from "./assets/js/index.js";
+      window.signUp = signUp;
     </script>
   </body>
 </html>

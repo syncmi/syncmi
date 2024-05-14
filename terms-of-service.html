@@ -5,12 +5,28 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Syncmi Web Solutions | Terms of Service</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://syncmi.web.app/terms-of-service" />
+    <meta property="og:title" content="Syncmi Web Solutions | Terms of Service" />
+    <meta
+      property="og:description"
+      content="Review Syncmi Web Solutions' terms of service to understand our agreement with you. Our terms outline the conditions for using our SEO-optimized, affordable, and scalable website solutions, ensuring a transparent and fair relationship."
+    />
+    <meta
+      property="og:image"
+      content="https://syncmi.web.app/assets/img/logo/syncmi.png"
+    />
+    <meta
+      name="description"
+      content="Review Syncmi Web Solutions' terms of service to understand our agreement with you. Our terms outline the conditions for using our SEO-optimized, affordable, and scalable website solutions, ensuring a transparent and fair relationship."
+    />
+    <meta name="keywords" content="Syncmi, website, web solutions, syncmi web solutions, affordable website, seo optimised website, stylish website, web development,website for business" />
+    <meta name="author" content="Mohammed Thalha" />
+    <link rel="canonical" href="https://syncmi.web.app/terms-of-service" />
 
     <!-- Favicons -->
-    <link href="assets/img/logo/SWS FAVICON.png" rel="icon" />
-    <link href="assets/img/logo/SWS FAVICON.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo/logoSyncmi.png" rel="icon" />
+    <link href="assets/img/logo/logoSyncmi.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,13 +55,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
 
-    <!-- =======================================================
-  * Template Name: Logis
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
@@ -56,7 +65,7 @@
       >
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo/SWS LOGO.png" alt="SYNCMI" />
+          <img src="assets/img/logo/sws.png" alt="Syncmi Web Solutions" />
           <!-- <h1>Web Solutions</h1> -->
         </a>
 
@@ -71,7 +80,9 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="get-a-quote" href="get-a-quote.html">Log In</a></li>
+            <li id="indexAcc">
+              <a class="get-a-quote" href="javascript:signUp()">Log In</a>
+            </li>
           </ul>
         </nav>
         <!-- .navbar -->
@@ -357,5 +368,9 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script type="module">
+      import { signUp } from "./assets/js/index.js";
+      window.signUp = signUp;
+    </script>
   </body>
 </html>
